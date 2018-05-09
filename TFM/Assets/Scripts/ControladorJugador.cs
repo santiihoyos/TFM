@@ -18,6 +18,7 @@ public class ControladorJugador : MonoBehaviour
   private float _cuentaCadencia;
   private bool _disparar;
   private int _balasDisparadasCargadorActual;
+  private bool _recargando;
   public int CargadorActual;
 
   [SerializeField] private Image _mirilla;
@@ -35,6 +36,8 @@ public class ControladorJugador : MonoBehaviour
   // Use this for initialization
   void Start()
   {
+    print("intancehash" + this.GetHashCode());
+    
     if (NecesitaRecargaEvent == null)
     {
       NecesitaRecargaEvent = new EventNecesitaRecarga();
@@ -88,7 +91,11 @@ public class ControladorJugador : MonoBehaviour
       BalasDeArmasPoseidas[ArmaSeleccionada] = 0;
     }
 
-    animadorArma.SetTrigger("recarga");
+    if (CargadorActual > 0)
+    {
+      animadorArma.SetTrigger("recarga");
+    }
+
     RecargadoEvent.Invoke();
   }
 
@@ -111,7 +118,10 @@ public class ControladorJugador : MonoBehaviour
 
     _disparar = arma.EsAutomatica ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1");
 
-    if (CargadorActual > 0 && !EstaCorriendo && _cuentaCadencia <= 0 && _disparar && animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip.name != "run")
+    var animacionActual = animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+    _recargando = animacionActual == "reload";
+
+    if (CargadorActual > 0 && !EstaCorriendo && _cuentaCadencia <= 0 && _disparar && !_recargando && animacionActual != "run")
     {
       _cuentaCadencia = arma.SegundosCadencia;
       animadorArma.SetTrigger("disparando");
