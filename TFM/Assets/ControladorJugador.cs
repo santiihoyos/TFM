@@ -40,7 +40,7 @@ public class ControladorJugador : MonoBehaviour
           case "Wood":
             Instantiate(prefabsImpactos[1], hit.point, hit.transform.rotation);
             break;
-          case "Meat":
+            case "Meat":
             Instantiate(prefabsImpactos[2], hit.point, hit.transform.rotation);
             break;
           case "Stone":
