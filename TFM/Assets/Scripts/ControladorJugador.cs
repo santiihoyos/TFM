@@ -36,14 +36,25 @@ public class ControladorJugador : MonoBehaviour
 
   private void FixedUpdate()
   {
+    ControlAnimacionMovimientos();
+    ControlDisparo();
+  }
+
+  private void ControlAnimacionMovimientos()
+  {
     EstaCorriendo = Mathf.Abs(_controller.velocity.x) > 8 || Mathf.Abs(_controller.velocity.z) > 8;
+    animadorArma.SetBool("corriendo", EstaCorriendo);
+  }
+
+  private void ControlDisparo()
+  {
     RaycastHit hit;
     Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
     Debug.DrawRay(ray.origin, ray.direction * ArmaSeleccionada.Alcance, Color.green);
 
-    var impacto = Physics.Raycast(ray, out hit, ArmaSeleccionada.Alcance);
+    bool impactandoRayo = Physics.Raycast(ray, out hit, ArmaSeleccionada.Alcance);
     
-    _mirilla.color = impacto && hit.collider.CompareTag("disparable") ? Color.red : Color.cyan;
+    _mirilla.color = impactandoRayo && hit.collider.CompareTag("disparable") ? Color.red : Color.cyan;
     
     _disparar = ArmaSeleccionada.EsAutomatica ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1");
 
@@ -53,7 +64,7 @@ public class ControladorJugador : MonoBehaviour
       animadorArma.SetTrigger("disparando");
       _audioSource.PlayOneShot(ArmaSeleccionada.SonidoDisparo);
 
-      if (impacto && hit.collider.sharedMaterial != null) //Disparo choca!!!
+      if (impactandoRayo && hit.collider.sharedMaterial != null)
       {
         switch (hit.collider.sharedMaterial.name)
         {
@@ -72,7 +83,5 @@ public class ControladorJugador : MonoBehaviour
         }
       }
     }
-
-    animadorArma.SetBool("corriendo", EstaCorriendo);
   }
 }
