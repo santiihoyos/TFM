@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Security.Principal;
+using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ControladorJugador : MonoBehaviour
@@ -7,23 +9,45 @@ public class ControladorJugador : MonoBehaviour
 
   [SerializeField] private GameObject[] prefabsImpactos;
   public Arma[] Armas;
-  public Arma ArmaSeleccionada;
+  public int[] BalasDeArmasPoseidas;
+  public byte ArmaSeleccionada;
   public bool EstaCorriendo;
 
   private CharacterController _controller;
   private AudioSource _audioSource;
   private float _cuentaCadencia;
   private bool _disparar;
+  private int _balasDisparadasCargadorActual;
+  public int CargadorActual;
 
   [SerializeField] private Image _mirilla;
+
+  [Tooltip("Evento que indica que es necesario meter balas al cargador, notifica las balas que se poseen.")]
+  public EventNecesitaRecarga NecesitaRecargaEvent;
+
+  public UnityEvent RecargadoEvent;
+
+  [System.Serializable]
+  public class EventNecesitaRecarga : UnityEvent<int>
+  {
+  }
 
   // Use this for initialization
   void Start()
   {
+    if (NecesitaRecargaEvent == null)
+    {
+      NecesitaRecargaEvent = new EventNecesitaRecarga();
+    }
+
+    if (RecargadoEvent == null)
+    {
+      RecargadoEvent = new UnityEvent();
+    }
+
     _controller = GetComponent<CharacterController>();
     _audioSource = GetComponent<AudioSource>();
-
-    ArmaSeleccionada = Armas[2];
+    ArmaSeleccionada = 2;
   }
 
   private void Update()
@@ -32,12 +56,40 @@ public class ControladorJugador : MonoBehaviour
     {
       _cuentaCadencia -= Time.deltaTime;
     }
+
+    if (Input.GetKeyDown(KeyCode.R))
+    {
+      Recarga();
+    }
   }
 
   private void FixedUpdate()
   {
     ControlAnimacionMovimientos();
     ControlDisparo();
+  }
+
+  private void Recarga()
+  {
+    if (CargadorActual > 0)
+    {
+      BalasDeArmasPoseidas[ArmaSeleccionada] += CargadorActual;
+    }
+
+    if (BalasDeArmasPoseidas[ArmaSeleccionada] >= Armas[ArmaSeleccionada].BalasPorCargador)
+    {
+      var balasMaximas = Armas[ArmaSeleccionada].BalasPorCargador;
+      CargadorActual = balasMaximas;
+      BalasDeArmasPoseidas[ArmaSeleccionada] -= balasMaximas;
+    }
+    else
+    {
+      CargadorActual = BalasDeArmasPoseidas[ArmaSeleccionada];
+      BalasDeArmasPoseidas[ArmaSeleccionada] = 0;
+    }
+
+    animadorArma.SetTrigger("recarga");
+    RecargadoEvent.Invoke();
   }
 
   private void ControlAnimacionMovimientos()
@@ -48,21 +100,23 @@ public class ControladorJugador : MonoBehaviour
 
   private void ControlDisparo()
   {
+    var arma = Armas[ArmaSeleccionada];
     RaycastHit hit;
     Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
-    Debug.DrawRay(ray.origin, ray.direction * ArmaSeleccionada.Alcance, Color.green);
+    Debug.DrawRay(ray.origin, ray.direction * arma.Alcance, Color.green);
 
-    bool impactandoRayo = Physics.Raycast(ray, out hit, ArmaSeleccionada.Alcance);
-    
+    bool impactandoRayo = Physics.Raycast(ray, out hit, arma.Alcance);
+
     _mirilla.color = impactandoRayo && hit.collider.CompareTag("disparable") ? Color.red : Color.cyan;
-    
-    _disparar = ArmaSeleccionada.EsAutomatica ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1");
 
-    if (!EstaCorriendo && _cuentaCadencia <= 0 && _disparar && animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip.name != "run")
+    _disparar = arma.EsAutomatica ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1");
+
+    if (CargadorActual > 0 && !EstaCorriendo && _cuentaCadencia <= 0 && _disparar && animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip.name != "run")
     {
-      _cuentaCadencia = ArmaSeleccionada.SegundosCadencia;
+      _cuentaCadencia = arma.SegundosCadencia;
       animadorArma.SetTrigger("disparando");
-      _audioSource.PlayOneShot(ArmaSeleccionada.SonidoDisparo);
+      _audioSource.PlayOneShot(arma.SonidoDisparo);
+      CargadorActual--;
 
       if (impactandoRayo && hit.collider.sharedMaterial != null)
       {
@@ -81,6 +135,13 @@ public class ControladorJugador : MonoBehaviour
             Instantiate(prefabsImpactos[3], hit.point, hit.transform.rotation);
             break;
         }
+      }
+    }
+    else
+    {
+      if (CargadorActual == 0)
+      {
+        NecesitaRecargaEvent.Invoke(BalasDeArmasPoseidas[ArmaSeleccionada]);
       }
     }
   }

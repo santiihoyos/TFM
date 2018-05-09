@@ -622,17 +622,22 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ControladorJugador.cs" t="Include" />
+          <e p="PlayerUIController.cs" t="Include" />
           <e p="prototipado" t="Include">
             <e p="ControlZombie.cs" t="Include" />
           </e>
           <e p="scriptables" t="Include">
-            <e p="Arma.cs" t="Include" />
+            <e p="Arma" t="Include">
+              <e p="Arma.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="TFM.sln" t="IncludeFlat" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
