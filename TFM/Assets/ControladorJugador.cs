@@ -30,7 +30,7 @@ public class ControladorJugador : MonoBehaviour
     {
       animadorArma.SetTrigger("disparando");
 
-      if (Physics.Raycast(ray, out hit, 100)) //Disparo choca!!!
+      if (Physics.Raycast(ray, out hit, 100) && hit.collider.sharedMaterial != null) //Disparo choca!!!
       {
         switch (hit.collider.sharedMaterial.name)
         {
