@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad0b1d60-1e70-43f0-80b3-40eec8d961e2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ControladorJugador.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ControladorJugador.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototipado_Armas.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototipado_Armas.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/arma_1911.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/arma_1911.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/scriptables/Arma.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/scriptables/Arma.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/scriptables/Arma_1911.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/scriptables/Arma_1911.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +19,11 @@
       <file leaf-file-name="Arma.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/scriptables/Arma.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="338">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
-                <marker date="1525884671989" expanded="false" signature="6:32" ph="..." />
-                <marker date="1525884671989" expanded="true" signature="119:337" ph="{...}" />
+                <marker date="1525891437464" expanded="false" signature="6:32" ph="..." />
+                <marker date="1525891437464" expanded="true" signature="119:370" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -34,18 +32,18 @@
       <file leaf-file-name="ControladorJugador.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="606">
+              <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
               <folding>
-                <marker date="1525890367849" expanded="true" signature="6:40" ph="..." />
-                <marker date="1525890367849" expanded="true" signature="89:2091" ph="{...}" />
-                <marker date="1525890367849" expanded="true" signature="413:559" ph="{...}" />
-                <marker date="1525890367849" expanded="true" signature="589:2089" ph="{...}" />
-                <marker date="1525890367849" expanded="true" signature="1032:1078" ph="{...}" />
-                <marker date="1525890367849" expanded="true" signature="1087:1134" ph="{...}" />
-                <marker date="1525890367849" expanded="true" signature="1257:2032" ph="{...}" />
-                <marker date="1525890367849" expanded="true" signature="1450:2026" ph="{...}" />
-                <marker date="1525890367849" expanded="true" signature="1508:2018" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="6:40" ph="..." />
+                <marker date="1525892323485" expanded="true" signature="89:2407" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="497:642" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="667:758" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="701:754" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="788:2405" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="1512:2346" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="1764:2340" ph="{...}" />
+                <marker date="1525892323485" expanded="true" signature="1822:2332" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -181,12 +179,12 @@
       <workItem from="1525870348169" duration="851000" />
       <workItem from="1525879118884" duration="823000" />
       <workItem from="1525883365240" duration="195000" />
-      <workItem from="1525883744571" duration="3434000" />
+      <workItem from="1525883744571" duration="5134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15587000" />
+    <option name="totallyTimeSpent" value="17287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -244,8 +242,8 @@
         <state relative-caret-position="78">
           <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
-            <marker date="1525884671989" expanded="false" signature="6:32" ph="..." />
-            <marker date="1525884671989" expanded="true" signature="119:337" ph="{...}" />
+            <marker date="1525891437464" expanded="false" signature="6:32" ph="..." />
+            <marker date="1525891437464" expanded="true" signature="119:370" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -526,29 +524,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/scriptables/Arma.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="338">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <marker date="1525884671989" expanded="false" signature="6:32" ph="..." />
-            <marker date="1525884671989" expanded="true" signature="119:337" ph="{...}" />
+            <marker date="1525891437464" expanded="false" signature="6:32" ph="..." />
+            <marker date="1525891437464" expanded="true" signature="119:370" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="606">
+          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
           <folding>
-            <marker date="1525890367849" expanded="true" signature="6:40" ph="..." />
-            <marker date="1525890367849" expanded="true" signature="89:2091" ph="{...}" />
-            <marker date="1525890367849" expanded="true" signature="413:559" ph="{...}" />
-            <marker date="1525890367849" expanded="true" signature="589:2089" ph="{...}" />
-            <marker date="1525890367849" expanded="true" signature="1032:1078" ph="{...}" />
-            <marker date="1525890367849" expanded="true" signature="1087:1134" ph="{...}" />
-            <marker date="1525890367849" expanded="true" signature="1257:2032" ph="{...}" />
-            <marker date="1525890367849" expanded="true" signature="1450:2026" ph="{...}" />
-            <marker date="1525890367849" expanded="true" signature="1508:2018" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="6:40" ph="..." />
+            <marker date="1525892323485" expanded="true" signature="89:2407" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="497:642" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="667:758" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="701:754" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="788:2405" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="1512:2346" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="1764:2340" ph="{...}" />
+            <marker date="1525892323485" expanded="true" signature="1822:2332" ph="{...}" />
           </folding>
         </state>
       </provider>

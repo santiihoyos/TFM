@@ -8,12 +8,15 @@ public class ControladorJugador : MonoBehaviour
   [SerializeField] private GameObject[] prefabsImpactos;
   public Arma[] Armas;
   public Arma ArmaSeleccionada;
-  
+  public bool EstaCorriendo;
+
   private CharacterController _controller;
   private AudioSource _audioSource;
+  private float _cuentaCadencia;
+  private bool _disparar;
 
   [SerializeField] private Image _mirilla;
-  
+
   // Use this for initialization
   void Start()
   {
@@ -21,28 +24,32 @@ public class ControladorJugador : MonoBehaviour
     _audioSource = GetComponent<AudioSource>();
 
     ArmaSeleccionada = Armas[2];
+  }
 
+  private void Update()
+  {
+    if (_cuentaCadencia >= 0)
+    {
+      _cuentaCadencia -= Time.deltaTime;
+    }
   }
 
   private void FixedUpdate()
   {
-    var isCorriendo = Mathf.Abs(_controller.velocity.x) > 5 || Mathf.Abs(_controller.velocity.z) > 5;
+    EstaCorriendo = Mathf.Abs(_controller.velocity.x) > 8 || Mathf.Abs(_controller.velocity.z) > 8;
     RaycastHit hit;
     Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
     Debug.DrawRay(ray.origin, ray.direction * ArmaSeleccionada.Alcance, Color.green);
 
     var impacto = Physics.Raycast(ray, out hit, ArmaSeleccionada.Alcance);
-    if (impacto && hit.collider.CompareTag("disparable"))
-    {
-      _mirilla.color = Color.red;
-    }
-    else
-    {
-      _mirilla.color = Color.cyan;
-    }
+    
+    _mirilla.color = impacto && hit.collider.CompareTag("disparable") ? Color.red : Color.cyan;
+    
+    _disparar = ArmaSeleccionada.EsAutomatica ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1");
 
-    if (!isCorriendo && Input.GetButtonDown("Fire1") && animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip.name != "run")
+    if (!EstaCorriendo && _cuentaCadencia <= 0 && _disparar && animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip.name != "run")
     {
+      _cuentaCadencia = ArmaSeleccionada.SegundosCadencia;
       animadorArma.SetTrigger("disparando");
       _audioSource.PlayOneShot(ArmaSeleccionada.SonidoDisparo);
 
@@ -66,6 +73,6 @@ public class ControladorJugador : MonoBehaviour
       }
     }
 
-    animadorArma.SetBool("corriendo", isCorriendo);
+    animadorArma.SetBool("corriendo", EstaCorriendo);
   }
 }
