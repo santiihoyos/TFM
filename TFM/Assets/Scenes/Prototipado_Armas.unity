@@ -712,6 +712,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1332494064753704, guid: 560a71b792ff85a4ba8f839081f9a379, type: 2}
+      propertyPath: m_TagString
+      value: disparable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 560a71b792ff85a4ba8f839081f9a379, type: 2}
   m_IsPrefabParent: 0
@@ -745,10 +749,10 @@ RectTransform:
   m_Father: {fileID: 1044840502}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -596.52, y: -325.28}
+  m_AnchorMin: {x: 0.48862338, y: 0.47978038}
+  m_AnchorMax: {x: 0.5097532, y: 0.5173295}
+  m_AnchoredPosition: {x: 0.49995995, y: 0.0000009536743}
+  m_SizeDelta: {x: 0.29500008, y: 0.77999973}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211295841
 MonoBehaviour:
@@ -887,6 +891,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1973858777363006, guid: a7034287e2bd6a141ab896f71d0b1357, type: 2}
+      propertyPath: m_TagString
+      value: disparable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a7034287e2bd6a141ab896f71d0b1357, type: 2}
   m_IsPrefabParent: 0
@@ -929,6 +937,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1904307472932916, guid: 6b4eed762f985a04bbc740b9da12e38d, type: 2}
+      propertyPath: m_TagString
+      value: disparable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b4eed762f985a04bbc740b9da12e38d, type: 2}
   m_IsPrefabParent: 0
@@ -953,6 +965,12 @@ MonoBehaviour:
   - {fileID: 1000011190285628, guid: beb3acff7ab73944fb8f470f24d74ed3, type: 2}
   - {fileID: 1000010191825552, guid: 83e55d3418297934fab882559d009285, type: 2}
   - {fileID: 1000010844420130, guid: 4edabb1c0dde62743b137378c7d22980, type: 2}
+  Armas:
+  - {fileID: 11400000, guid: da9773acc13014078b7da66161bf3811, type: 2}
+  - {fileID: 11400000, guid: 454c8d4fb2bbb4e68bf6d0e29ce475d1, type: 2}
+  - {fileID: 11400000, guid: 4ae7c90fdb3634f9bb16e7ba70aea99b, type: 2}
+  ArmaSeleccionada: {fileID: 0}
+  _mirilla: {fileID: 1211295841}
 --- !u!1001 &1917815113
 Prefab:
   m_ObjectHideFlags: 0
@@ -1140,6 +1158,10 @@ Prefab:
     - target: {fileID: 4529123886467312, guid: b6d38b5165f9b6e49a8402118b5237a1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882349057394540, guid: b6d38b5165f9b6e49a8402118b5237a1, type: 2}
+      propertyPath: m_TagString
+      value: disparable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6d38b5165f9b6e49a8402118b5237a1, type: 2}
