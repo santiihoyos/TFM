@@ -11,5 +11,6 @@ public class Arma : ScriptableObject
   public GameObject PrefabCasquillo;
   public AudioClip SonidoDisparo;
   public AudioClip SonidoCasquillo;
+  public AudioClip SonidoRecarga;
   public float SegundosCadencia;
 }

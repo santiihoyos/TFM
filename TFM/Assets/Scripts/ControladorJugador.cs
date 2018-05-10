@@ -36,8 +36,6 @@ public class ControladorJugador : MonoBehaviour
   // Use this for initialization
   void Start()
   {
-    print("intancehash" + this.GetHashCode());
-    
     if (NecesitaRecargaEvent == null)
     {
       NecesitaRecargaEvent = new EventNecesitaRecarga();
@@ -51,6 +49,14 @@ public class ControladorJugador : MonoBehaviour
     _controller = GetComponent<CharacterController>();
     _audioSource = GetComponent<AudioSource>();
     ArmaSeleccionada = 2;
+  }
+
+  /// <summary>
+  /// Escucha el evento de final de recarga de los ArmaController
+  /// </summary>
+  public void OnEndReload()
+  {
+    _recargando = false;
   }
 
   private void Update()
@@ -74,29 +80,35 @@ public class ControladorJugador : MonoBehaviour
 
   private void Recarga()
   {
-    if (CargadorActual > 0)
+    var animacionActual = animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip;
+    if (animacionActual.name != "shot")
     {
-      BalasDeArmasPoseidas[ArmaSeleccionada] += CargadorActual;
-    }
+      _recargando = true;
+      if (CargadorActual > 0)
+      {
+        BalasDeArmasPoseidas[ArmaSeleccionada] += CargadorActual;
+      }
 
-    if (BalasDeArmasPoseidas[ArmaSeleccionada] >= Armas[ArmaSeleccionada].BalasPorCargador)
-    {
-      var balasMaximas = Armas[ArmaSeleccionada].BalasPorCargador;
-      CargadorActual = balasMaximas;
-      BalasDeArmasPoseidas[ArmaSeleccionada] -= balasMaximas;
-    }
-    else
-    {
-      CargadorActual = BalasDeArmasPoseidas[ArmaSeleccionada];
-      BalasDeArmasPoseidas[ArmaSeleccionada] = 0;
-    }
+      if (BalasDeArmasPoseidas[ArmaSeleccionada] >= Armas[ArmaSeleccionada].BalasPorCargador)
+      {
+        var balasMaximas = Armas[ArmaSeleccionada].BalasPorCargador;
+        CargadorActual = balasMaximas;
+        BalasDeArmasPoseidas[ArmaSeleccionada] -= balasMaximas;
+      }
+      else
+      {
+        CargadorActual = BalasDeArmasPoseidas[ArmaSeleccionada];
+        BalasDeArmasPoseidas[ArmaSeleccionada] = 0;
+      }
 
-    if (CargadorActual > 0)
-    {
-      animadorArma.SetTrigger("recarga");
-    }
+      if (CargadorActual > 0)
+      {
+        _audioSource.PlayOneShot(Armas[ArmaSeleccionada].SonidoRecarga);
+        animadorArma.SetTrigger("recarga");
+      }
 
-    RecargadoEvent.Invoke();
+      RecargadoEvent.Invoke();
+    }
   }
 
   private void ControlAnimacionMovimientos()
@@ -119,7 +131,6 @@ public class ControladorJugador : MonoBehaviour
     _disparar = arma.EsAutomatica ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1");
 
     var animacionActual = animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip.name;
-    _recargando = animacionActual == "reload";
 
     if (CargadorActual > 0 && !EstaCorriendo && _cuentaCadencia <= 0 && _disparar && !_recargando && animacionActual != "run")
     {
