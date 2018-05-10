@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-public class ArmaController : MonoBehaviour
+public class ControladorArma : MonoBehaviour
 {
   public UnityEvent OnEndReload;
   private Animator _animator;

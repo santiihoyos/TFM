@@ -6,8 +6,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AnimationClipController.cs" t="Include" />
-        <e p="ArmaController.cs" t="Include" />
         <e p="Libraries" t="Include">
           <e p="Cinemachine" t="Include">
             <e p="Base" t="Include">
@@ -623,6 +621,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ControladorArma.cs" t="Include" />
           <e p="ControladorJugador.cs" t="Include" />
           <e p="PlayerUIController.cs" t="Include" />
           <e p="prototipado" t="Include">
