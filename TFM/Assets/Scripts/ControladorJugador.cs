@@ -59,6 +59,13 @@ public class ControladorJugador : MonoBehaviour
     _recargando = false;
   }
 
+  public void LanzarCasquillo(Transform posicionDeLanzado)
+  {
+    var casquillo = Instantiate(Armas[ArmaSeleccionada].PrefabCasquillo, posicionDeLanzado.position, posicionDeLanzado.rotation);
+    casquillo.GetComponent<Rigidbody>().AddRelativeForce(Vector3.left * 5, ForceMode.Impulse);
+    casquillo.GetComponent<Rigidbody>().AddRelativeTorque(Vector3.right * 100, ForceMode.VelocityChange);
+  }
+
   private void Update()
   {
     if (_cuentaCadencia >= 0)

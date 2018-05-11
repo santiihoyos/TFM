@@ -14,8 +14,9 @@ MonoBehaviour:
   Nombre: 1911
   Alcance: 20
   BalasPorCargador: 7
-  EsAutomatica: 1
-  PrefabCasquillo: {fileID: 173206, guid: f4f04a911e2175641b1679a514526103, type: 2}
+  EsAutomatica: 0
+  PrefabCasquillo: {fileID: 1737958108010212, guid: df168cb5d6d00498ca4fe65c2a2445c5,
+    type: 2}
   SonidoDisparo: {fileID: 8300000, guid: 24c33d3af5a56314e8dc68710786a4bc, type: 3}
   SonidoCasquillo: {fileID: 8300000, guid: faa5e5085b63fca40acb298b17828de2, type: 3}
   SonidoRecarga: {fileID: 8300000, guid: 0ef06fc6b85e39444ad4b73c8573fec7, type: 3}
