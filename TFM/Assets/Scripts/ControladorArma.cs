@@ -4,6 +4,8 @@ using UnityEngine.Events;
 
 public class ControladorArma : MonoBehaviour
 {
+  public Arma Scriptable;
+  
   [Serializable]
   public class LanzaCasquilloEvent : UnityEvent<Transform> {}
   public LanzaCasquilloEvent OnLanzaCasquillo;

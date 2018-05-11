@@ -622,6 +622,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ControladorArma.cs" t="Include" />
+          <e p="ControladorCasquillo.cs" t="Include" />
           <e p="ControladorJugador.cs" t="Include" />
           <e p="PlayerUIController.cs" t="Include" />
           <e p="prototipado" t="Include">
