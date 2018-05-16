@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4238465374946126}
   - component: {fileID: 33626989140838208}
   - component: {fileID: 23699734693366086}
-  - component: {fileID: 114760929381945466}
-  - component: {fileID: 82785454546086738}
   - component: {fileID: 54202925895600024}
+  - component: {fileID: 82785454546086738}
+  - component: {fileID: 136084762708161542}
+  - component: {fileID: 114760929381945466}
   m_Layer: 0
   m_Name: casquillo_1911
   m_TagString: Untagged
@@ -50,7 +51,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1737958108010212}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -208,3 +209,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 82785454546086738}
+--- !u!136 &136084762708161542
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1737958108010212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.011954056
+  m_Height: 0.047751367
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.000000055879344, z: -0.00000002421438}

@@ -1,17 +1,23 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class ControladorArma : MonoBehaviour
 {
   public Arma Scriptable;
-  
+
   [Serializable]
-  public class LanzaCasquilloEvent : UnityEvent<Transform> {}
+  public class LanzaCasquilloEvent : UnityEvent<Transform>
+  {
+  }
+
   public LanzaCasquilloEvent OnLanzaCasquillo;
-  
+
+  public GameObject ChispaDisparo;
   public UnityEvent OnEndReload;
   private Animator _animator;
+
 
   [SerializeField] private Transform _posicionLanzamientoasquillo;
 
@@ -44,6 +50,12 @@ public class ControladorArma : MonoBehaviour
             intParameter = 0,
             time = 0.1f
           });
+          clip.AddEvent(new AnimationEvent
+          {
+            functionName = "Dispara",
+            intParameter = 0,
+            time = 0f
+          });
           break;
       }
     }
@@ -58,5 +70,17 @@ public class ControladorArma : MonoBehaviour
   {
     print("Lanza casquillo");
     OnLanzaCasquillo.Invoke(_posicionLanzamientoasquillo);
+  }
+
+  void Dispara()
+  {
+    StartCoroutine(HabilitaDeshabilitaChispasDisparo());
+  }
+
+  IEnumerator HabilitaDeshabilitaChispasDisparo()
+  {
+    ChispaDisparo.SetActive(true);
+    yield return new WaitForSeconds(0.05f);
+    ChispaDisparo.SetActive(false);
   }
 }
