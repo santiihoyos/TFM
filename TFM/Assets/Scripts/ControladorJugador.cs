@@ -148,22 +148,26 @@ public class ControladorJugador : MonoBehaviour
 
       if (impactandoRayo)
       {
-        print("Choca con: " + hit.collider.tag);
+        GameObject impacto = null;
         switch (hit.collider.tag)
         {
-          case "Metal":
-            Instantiate(prefabsImpactos[0], hit.point, hit.transform.rotation);
+          case "metal":
+            impacto = Instantiate(prefabsImpactos[0], hit.point, hit.transform.rotation);
             break;
-          case "Wood":
-            Instantiate(prefabsImpactos[1], hit.point, hit.transform.rotation);
+          case "madera":
+            impacto = Instantiate(prefabsImpactos[1], hit.point, hit.transform.rotation);
             break;
           case "carne":
-            Instantiate(prefabsImpactos[2], hit.point, hit.transform.rotation);
-            print("entra a carne");
+            impacto = Instantiate(prefabsImpactos[2], hit.point, hit.transform.rotation);
             break;
-          case "Stone":
-            Instantiate(prefabsImpactos[3], hit.point, hit.transform.rotation);
+          case "roca":
+            impacto = Instantiate(prefabsImpactos[3], hit.point, hit.transform.rotation);
             break;
+        }
+
+        if (impacto != null)
+        {
+          impacto.transform.LookAt(gameObject.transform);
         }
       }
     }

@@ -3,77 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0b1d60-1e70-43f0-80b3-40eec8d961e2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/zombie.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/zombie.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/CrossPlatformInput.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/CrossPlatformInput.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/CrossPlatformInput/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/CrossPlatformInput/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/Billboard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/Billboard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/FacingLeaves_4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/FacingLeaves_4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/FacingLeaves_4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/FacingLeaves_4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/FacingLeaves_4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/FacingLeaves_4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop.spm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop.spm.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/Billboard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/Billboard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Leaves_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Leaves_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Leaves_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Leaves_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Leaves_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Leaves_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile.spm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile.spm.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/Billboard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/Billboard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop.spm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop.spm.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/Billboard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/Billboard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Leaves_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Leaves_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Branches_0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Branches_0.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Fronds_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Fronds_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop.spm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop.spm.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water/Materials/WaterProDaytime.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water/Materials/WaterProDaytime.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water/Materials/WaterProNighttime.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water/Materials/WaterProNighttime.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water4/Materials/Water4Simple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Environment/Water/Water4/Materials/Water4Simple.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/AlphaButtonClickMask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/AlphaButtonClickMask.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/ParticleSystemDestroyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/ParticleSystemDestroyer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/PlatformSpecificContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/PlatformSpecificContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/SimpleActivatorMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Utility/SimpleActivatorMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FPSController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FPSController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/zombie3.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/zombie3.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mapa01 - Casa encantada.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mapa01 - Casa encantada.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototipados/Prototipado_Armas.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototipados/Prototipado_Armas.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/concrete block(Pack)/block01/mesh/mesh block01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/concrete block(Pack)/block01/mesh/mesh block01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,35 +19,36 @@
       <file leaf-file-name="ControladorJugador.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="806">
+              <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
               <folding>
-                <marker date="1527079359543" expanded="false" signature="6:99" ph="..." />
-                <marker date="1527079359543" expanded="true" signature="148:5038" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="925:933" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="982:1313" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="1024:1093" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="1126:1179" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="1317:1413" ph="/// Escucha el evento de final de recarga de los ArmaController ... " />
-                <marker date="1527079359543" expanded="true" signature="1441:1474" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="1534:1873" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="1898:2056" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="1932:1985" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2023:2052" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2086:2151" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2177:3076" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2299:3072" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2361:2443" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2538:2726" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2737:2870" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="2901:3034" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="3122:3284" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="3317:5036" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="4034:4887" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="4235:4881" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="4326:4873" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="4896:5032" ph="{...}" />
-                <marker date="1527079359543" expanded="true" signature="4933:5026" ph="{...}" />
+                <marker date="1527107147293" expanded="false" signature="6:99" ph="..." />
+                <marker date="1527107147293" expanded="true" signature="148:5137" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="925:933" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="982:1313" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="1024:1093" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="1126:1179" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="1317:1413" ph="/// Escucha el evento de final de recarga de los ArmaController ... " />
+                <marker date="1527107147293" expanded="true" signature="1441:1474" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="1534:1873" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="1898:2056" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="1932:1985" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2023:2052" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2086:2151" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2177:3076" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2299:3072" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2361:2443" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2538:2726" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2737:2870" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="2901:3034" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="3122:3284" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="3317:5135" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="4034:4986" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="4235:4980" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="4312:4864" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="4894:4972" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="4995:5131" ph="{...}" />
+                <marker date="1527107147293" expanded="true" signature="5032:5125" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -221,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -234,7 +168,6 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
@@ -288,11 +221,12 @@
       <workItem from="1526324117845" duration="855000" />
       <workItem from="1526504490593" duration="1008000" />
       <workItem from="1527079115440" duration="854000" />
+      <workItem from="1527106530994" duration="618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38377000" />
+    <option name="totallyTimeSpent" value="38995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -551,35 +485,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="806">
+          <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
           <folding>
-            <marker date="1527079359543" expanded="false" signature="6:99" ph="..." />
-            <marker date="1527079359543" expanded="true" signature="148:5038" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="925:933" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="982:1313" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="1024:1093" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="1126:1179" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="1317:1413" ph="/// Escucha el evento de final de recarga de los ArmaController ... " />
-            <marker date="1527079359543" expanded="true" signature="1441:1474" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="1534:1873" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="1898:2056" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="1932:1985" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2023:2052" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2086:2151" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2177:3076" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2299:3072" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2361:2443" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2538:2726" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2737:2870" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="2901:3034" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="3122:3284" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="3317:5036" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="4034:4887" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="4235:4881" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="4326:4873" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="4896:5032" ph="{...}" />
-            <marker date="1527079359543" expanded="true" signature="4933:5026" ph="{...}" />
+            <marker date="1527107147293" expanded="false" signature="6:99" ph="..." />
+            <marker date="1527107147293" expanded="true" signature="148:5137" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="925:933" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="982:1313" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="1024:1093" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="1126:1179" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="1317:1413" ph="/// Escucha el evento de final de recarga de los ArmaController ... " />
+            <marker date="1527107147293" expanded="true" signature="1441:1474" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="1534:1873" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="1898:2056" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="1932:1985" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2023:2052" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2086:2151" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2177:3076" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2299:3072" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2361:2443" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2538:2726" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2737:2870" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="2901:3034" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="3122:3284" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="3317:5135" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="4034:4986" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="4235:4980" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="4312:4864" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="4894:4972" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="4995:5131" ph="{...}" />
+            <marker date="1527107147293" expanded="true" signature="5032:5125" ph="{...}" />
           </folding>
         </state>
       </provider>
