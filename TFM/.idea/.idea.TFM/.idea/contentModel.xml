@@ -17,6 +17,7 @@
             <e p="swayc.cs" t="Include" />
           </e>
         </e>
+        <e p="GameController.cs" t="Include" />
         <e p="Helicopter" t="Include">
           <e p="Info.txt" t="Include" />
         </e>

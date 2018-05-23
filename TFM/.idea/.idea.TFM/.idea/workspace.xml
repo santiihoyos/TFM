@@ -4,8 +4,6 @@
     <list default="true" id="ad0b1d60-1e70-43f0-80b3-40eec8d961e2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mapa01 - Casa encantada.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mapa01 - Casa encantada.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ControladorJugador.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ControladorJugador.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="806">
-              <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+              <caret line="170" column="9" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
               <folding>
                 <marker date="1527107147293" expanded="false" signature="6:99" ph="..." />
                 <marker date="1527107147293" expanded="true" signature="148:5137" ph="{...}" />
@@ -50,6 +48,15 @@
                 <marker date="1527107147293" expanded="true" signature="4995:5131" ph="{...}" />
                 <marker date="1527107147293" expanded="true" signature="5032:5125" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/GameController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -111,6 +118,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Editor/Water/Water4/GerstnerDisplaceEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/prototipado/ControlZombie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/scriptables/Arma/Arma.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ControladorArma.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ControladorCasquillo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -133,6 +141,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ControladorCasquillo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControladorArma.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameController.cs" />
       </list>
     </option>
   </component>
@@ -221,12 +230,12 @@
       <workItem from="1526324117845" duration="855000" />
       <workItem from="1526504490593" duration="1008000" />
       <workItem from="1527079115440" duration="854000" />
-      <workItem from="1527106530994" duration="618000" />
+      <workItem from="1527106530994" duration="1397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38995000" />
+    <option name="totallyTimeSpent" value="39774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -239,7 +248,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1430" y="-11" width="2497" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -279,7 +287,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/ControladorJugador.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/_Standard Assets/Editor/Water/Water4/GerstnerDisplaceEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -486,7 +493,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControladorJugador.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="806">
-          <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+          <caret line="170" column="9" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
           <folding>
             <marker date="1527107147293" expanded="false" signature="6:99" ph="..." />
             <marker date="1527107147293" expanded="true" signature="148:5137" ph="{...}" />
@@ -516,6 +523,13 @@
             <marker date="1527107147293" expanded="true" signature="4995:5131" ph="{...}" />
             <marker date="1527107147293" expanded="true" signature="5032:5125" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
         </state>
       </provider>
     </entry>
