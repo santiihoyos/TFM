@@ -6,6 +6,20 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Barrels" t="Include">
+          <e p="StandardDoubleSided.shader" t="Include" />
+        </e>
+        <e p="Flare Gun" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="flarebullet.cs" t="Include" />
+            <e p="flaregun.cs" t="Include" />
+            <e p="flareround.cs" t="Include" />
+            <e p="swayc.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Helicopter" t="Include">
+          <e p="Info.txt" t="Include" />
+        </e>
         <e p="Libraries" t="Include">
           <e p="_Standard Assets" t="Include">
             <e p="Characters" t="Include">
@@ -218,6 +232,9 @@
               <e p="Arma.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="SkySerie Freebie" t="Include">
+          <e p="Hdri setup.txt" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

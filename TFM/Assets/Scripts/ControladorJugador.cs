@@ -146,9 +146,10 @@ public class ControladorJugador : MonoBehaviour
       _audioSource.PlayOneShot(arma.SonidoDisparo);
       CargadorActual--;
 
-      if (impactandoRayo && hit.collider.sharedMaterial != null)
+      if (impactandoRayo)
       {
-        switch (hit.collider.sharedMaterial.name)
+        print("Choca con: " + hit.collider.tag);
+        switch (hit.collider.tag)
         {
           case "Metal":
             Instantiate(prefabsImpactos[0], hit.point, hit.transform.rotation);
@@ -156,8 +157,9 @@ public class ControladorJugador : MonoBehaviour
           case "Wood":
             Instantiate(prefabsImpactos[1], hit.point, hit.transform.rotation);
             break;
-          case "Meat":
+          case "carne":
             Instantiate(prefabsImpactos[2], hit.point, hit.transform.rotation);
+            print("entra a carne");
             break;
           case "Stone":
             Instantiate(prefabsImpactos[3], hit.point, hit.transform.rotation);

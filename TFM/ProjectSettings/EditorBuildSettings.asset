@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prototipado_Armas.unity
-    guid: d66ff09113d074ea884dca47e9427c2e
+    path: Assets/Scenes/Mapa01 - Casa encantada.unity
+    guid: 8cf168ae462e44c018ed4e6c3e639f88
   m_configObjects: {}
