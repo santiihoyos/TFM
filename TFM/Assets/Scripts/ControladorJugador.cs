@@ -1,4 +1,5 @@
-﻿using System.Security.Principal;
+﻿using System;
+using Scriptables;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -28,7 +29,7 @@ public class ControladorJugador : MonoBehaviour
 
   public UnityEvent RecargadoEvent;
 
-  [System.Serializable]
+  [Serializable]
   public class EventNecesitaRecarga : UnityEvent<int>
   {
   }

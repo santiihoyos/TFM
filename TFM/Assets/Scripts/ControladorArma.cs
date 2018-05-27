@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Scriptables;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -68,7 +69,6 @@ public class ControladorArma : MonoBehaviour
 
   void LanzaCasquilloListener()
   {
-    print("Lanza casquillo");
     OnLanzaCasquillo.Invoke(_posicionLanzamientoasquillo);
   }
 

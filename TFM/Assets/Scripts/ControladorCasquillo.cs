@@ -14,7 +14,6 @@ namespace DefaultNamespace
 
     private void OnCollisionEnter(Collision other)
     {
-      print("SONANDO");
       _audioSource.Play();
     }
 

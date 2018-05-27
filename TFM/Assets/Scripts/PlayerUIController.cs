@@ -22,11 +22,11 @@ public class PlayerUIController : MonoBehaviour
   {
     if (balasQueQuedan <= 0)
     {
-      _avisoCargador.text = "No quedan balas!";
+      _avisoCargador.text = Strings.Resolver.GetString("noBalas");
     }
     else
     {
-      _avisoCargador.text = "Recarga!";
+      _avisoCargador.text = Strings.Resolver.GetString("recarga");
     }
 
     _avisoCargador.enabled = true;

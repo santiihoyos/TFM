@@ -225,12 +225,21 @@
           <e p="ControladorCasquillo.cs" t="Include" />
           <e p="ControladorJugador.cs" t="Include" />
           <e p="PlayerUIController.cs" t="Include" />
+          <e p="custom-events.cs" t="Include" />
           <e p="prototipado" t="Include">
             <e p="ControlZombie.cs" t="Include" />
           </e>
           <e p="scriptables" t="Include">
             <e p="Arma" t="Include">
               <e p="Arma.cs" t="Include" />
+            </e>
+            <e p="Idiomas" t="Include">
+              <e p="Idioma.cs" t="Include" />
+              <e p="Idiomas.cs" t="Include" />
+              <e p="Strings.cs" t="Include" />
+            </e>
+            <e p="Ronda" t="Include">
+              <e p="Ronda.cs" t="Include" />
             </e>
           </e>
         </e>
