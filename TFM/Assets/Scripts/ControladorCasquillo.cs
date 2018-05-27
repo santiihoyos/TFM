@@ -19,7 +19,7 @@ namespace DefaultNamespace
 
     IEnumerator Destruye()
     {
-      yield return new WaitForSeconds(10);
+      yield return new WaitForSeconds(5);
       Destroy(gameObject);
     }
   }

@@ -1,8 +1,10 @@
 ﻿using System;
+using CustomEvents;
 using Scriptables;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class ControladorJugador : MonoBehaviour
 {
@@ -13,6 +15,9 @@ public class ControladorJugador : MonoBehaviour
   public int[] BalasDeArmasPoseidas;
   public byte ArmaSeleccionada;
   public bool EstaCorriendo;
+  public int CargadorActual;
+  public float VidaMaxima;
+  public float StaminaMaxima;
 
   private CharacterController _controller;
   private AudioSource _audioSource;
@@ -20,26 +25,25 @@ public class ControladorJugador : MonoBehaviour
   private bool _disparar;
   private int _balasDisparadasCargadorActual;
   private bool _recargando;
-  public int CargadorActual;
+  private bool _invocadoNecesitaRecarga;
+  private float _vidaActual;
+  private float _staminaActual;
 
   [SerializeField] private Image _mirilla;
 
   [Tooltip("Evento que indica que es necesario meter balas al cargador, notifica las balas que se poseen.")]
-  public EventNecesitaRecarga NecesitaRecargaEvent;
+  public ValueIntChangeEvent NecesitaRecargaEvent;
 
   public UnityEvent RecargadoEvent;
-
-  [Serializable]
-  public class EventNecesitaRecarga : UnityEvent<int>
-  {
-  }
+  public ValueFloatChangeEvent VidaChangeEvent;
+  public ValueFloatChangeEvent StaminaChangeEvent;
 
   // Use this for initialization
   void Start()
   {
     if (NecesitaRecargaEvent == null)
     {
-      NecesitaRecargaEvent = new EventNecesitaRecarga();
+      NecesitaRecargaEvent = new ValueIntChangeEvent();
     }
 
     if (RecargadoEvent == null)
@@ -50,6 +54,11 @@ public class ControladorJugador : MonoBehaviour
     _controller = GetComponent<CharacterController>();
     _audioSource = GetComponent<AudioSource>();
     ArmaSeleccionada = 2;
+
+    _vidaActual = VidaMaxima;
+    _staminaActual = StaminaMaxima;
+    VidaChangeEvent.Invoke(_vidaActual);
+    StaminaChangeEvent.Invoke(_staminaActual);
   }
 
   /// <summary>
@@ -113,6 +122,7 @@ public class ControladorJugador : MonoBehaviour
       {
         _audioSource.PlayOneShot(Armas[ArmaSeleccionada].SonidoRecarga);
         animadorArma.SetTrigger("recarga");
+        _invocadoNecesitaRecarga = false;
       }
 
       RecargadoEvent.Invoke();
@@ -121,7 +131,32 @@ public class ControladorJugador : MonoBehaviour
 
   private void ControlAnimacionMovimientos()
   {
-    EstaCorriendo = Mathf.Abs(_controller.velocity.x) > 8 || Mathf.Abs(_controller.velocity.z) > 8;
+    EstaCorriendo = Mathf.Abs(_controller.velocity.x) > 6.2 || Mathf.Abs(_controller.velocity.z) > 6.2;
+    print("Corriendo: " + EstaCorriendo);
+    
+    if (_staminaActual <= 0)
+    {
+      print("Frenando");
+      GetComponent<FirstPersonController>().m_RunSpeed = 5;
+    }
+    else if (_staminaActual > 20)
+    {
+      GetComponent<FirstPersonController>().m_RunSpeed = 10;
+    }
+
+    if (EstaCorriendo && _staminaActual >= 0)
+    {
+      _staminaActual = _staminaActual <= 0 ? 0 : _staminaActual - Time.deltaTime * 10;
+      print("Stamina " + _staminaActual);
+      StaminaChangeEvent.Invoke(_staminaActual);
+    }
+    else if (_staminaActual <= StaminaMaxima)
+    {
+      _staminaActual = _staminaActual > StaminaMaxima ? StaminaMaxima : _staminaActual + Time.deltaTime * 5;
+      StaminaChangeEvent.Invoke(_staminaActual);
+    }
+
+    print("Time.deltaTime: " + Time.deltaTime);
     animadorArma.SetBool("corriendo", EstaCorriendo);
   }
 
@@ -174,9 +209,10 @@ public class ControladorJugador : MonoBehaviour
     }
     else
     {
-      if (CargadorActual == 0)
+      if (!_invocadoNecesitaRecarga && CargadorActual == 0)
       {
         NecesitaRecargaEvent.Invoke(BalasDeArmasPoseidas[ArmaSeleccionada]);
+        _invocadoNecesitaRecarga = true;
       }
     }
   }

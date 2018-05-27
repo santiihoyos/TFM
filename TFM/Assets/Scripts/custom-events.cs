@@ -12,4 +12,9 @@ namespace CustomEvents
   public class ValueStringChangeEvent : UnityEvent<int>
   {
   }
+  
+  [Serializable]
+  public class ValueFloatChangeEvent : UnityEvent<float>
+  {
+  }
 }

@@ -6,6 +6,9 @@ using UnityEngine.Audio;
 public class GameController : MonoBehaviour
 {
   public AudioClip[] SonidosDeFondo;
+  
+  [Tooltip("Posicions desde las que se van a ir generando los zombies.")]
+  public GameObject[] Spawmers;
 
   private AudioSource _audioSourceGeneral;
   private int _sonidoDeFondoActual;
