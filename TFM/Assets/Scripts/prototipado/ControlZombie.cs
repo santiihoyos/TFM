@@ -1,13 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.Events;
+using UnityStandardAssets.Characters.ThirdPerson;
 
-public class ControlZombie : MonoBehaviour
+public class ControlZombie : MonoBehaviour, IQuitableVida
 {
-  
+  public float Vida = 100;
+  public UnityEvent OnDeadEvent;
+
   private Animator _animador;
   private Rigidbody _rigidbody;
-  
+  private bool _alive = true;
+
   // Use this for initialization
   private void Start()
   {
@@ -18,8 +25,48 @@ public class ControlZombie : MonoBehaviour
   // Update is called once per frame
   private void Update()
   {
-    var izquierdaDerecha = Input.GetAxis("Horizontal");
-    var delanteAtras = Input.GetAxis("Vertical");
-    _rigidbody.AddForce(Vector3.forward * delanteAtras * 20f, ForceMode.Acceleration);
+  }
+
+  private void OnTriggerEnter(Collider other)
+  {
+    if (other.CompareTag("Player"))
+    {
+      _animador.SetBool("ataca", true);
+    }
+  }
+
+  private void OnTriggerExit(Collider other)
+  {
+    if (other.CompareTag("Player"))
+    {
+      _animador.SetBool("ataca", false);
+    }
+  }
+
+  public void QuitaVida(float cantidad)
+  {
+    Vida -= cantidad;
+    if (Vida <= 0 && _alive)
+    {
+      _alive = false;
+      GetComponent<AICharacterControl>().target = null;
+      GetComponent<CapsuleCollider>().enabled = false;
+      GetComponent<BoxCollider>().enabled = false;
+      GetComponent<AICharacterControl>().enabled = false;
+      GetComponent<ThirdPersonCharacter>().enabled = false;
+      GetComponent<NavMeshAgent>().enabled = false;
+      _animador.SetBool("ataca", false);
+      _animador.SetTrigger("muere");
+      if (OnDeadEvent != null)
+      {
+        OnDeadEvent.Invoke();
+      }
+    }
+  }
+
+  public IEnumerator OnEndDead()
+  {
+    yield return new WaitForSeconds(5f);
+    Destroy(gameObject);
   }
 }

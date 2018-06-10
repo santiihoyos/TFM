@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using Scriptables;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class PlayerUIController : MonoBehaviour
   [SerializeField] private GameObject _panelRonda;
   [SerializeField] private GameObject _panelVidaBaja;
   [SerializeField] private Text _contadorVida;
+  [SerializeField] private Text _rondaText1;
+  [SerializeField] private Text _rondaText2;
   [SerializeField] private Text _contadorStamina;
   [SerializeField] private Text _avisoCargador;
   private Coroutine corutineRecarga;
@@ -28,7 +31,6 @@ public class PlayerUIController : MonoBehaviour
     print("Recargando en ui!");
     _avisoCargador.gameObject.SetActive(false);
     StopCoroutine(corutineRecarga);
-    StartCoroutine(CambioDeRonda());
   }
 
   public void OnNecesariaRecarga(int balasQueQuedan)
@@ -43,13 +45,13 @@ public class PlayerUIController : MonoBehaviour
     }
 
     _avisoCargador.gameObject.SetActive(true);
-    print("activando desactivaror!");
     corutineRecarga = StartCoroutine(AvisoRecargaPalpito());
   }
 
   public void OnRondaChangeListener(int rondaActual)
   {
     
+    StartCoroutine(CambioDeRonda(rondaActual));
   }
 
   //activa y desactiva el text del aviso de recarga cada 1s
@@ -62,8 +64,10 @@ public class PlayerUIController : MonoBehaviour
     }
   }
 
-  IEnumerator CambioDeRonda()
+  IEnumerator CambioDeRonda(int rondaActual)
   {
+    _rondaText1.text = Strings.Resolver.GetString("ronda") + " "+ rondaActual;
+    _rondaText2.text = Strings.Resolver.GetString("ronda") + " "+ rondaActual;
     _panelRonda.SetActive(true);
     _panelJuego.SetActive(false);
     _mira.SetActive(false);

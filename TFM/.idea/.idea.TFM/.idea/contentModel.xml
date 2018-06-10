@@ -226,6 +226,9 @@
           <e p="ControladorJugador.cs" t="Include" />
           <e p="PlayerUIController.cs" t="Include" />
           <e p="custom-events.cs" t="Include" />
+          <e p="interfaces" t="Include">
+            <e p="IQuitableVida.cs" t="Include" />
+          </e>
           <e p="prototipado" t="Include">
             <e p="ControlZombie.cs" t="Include" />
           </e>

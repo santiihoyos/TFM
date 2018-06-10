@@ -1,5 +1,6 @@
 ﻿using System;
 using CustomEvents;
+using DefaultNamespace;
 using Scriptables;
 using UnityEngine;
 using UnityEngine.Events;
@@ -19,6 +20,7 @@ public class ControladorJugador : MonoBehaviour
   public float VidaMaxima;
   public float StaminaMaxima;
 
+  private FirstPersonController _firstPersonController;
   private CharacterController _controller;
   private AudioSource _audioSource;
   private float _cuentaCadencia;
@@ -59,6 +61,8 @@ public class ControladorJugador : MonoBehaviour
     _staminaActual = StaminaMaxima;
     VidaChangeEvent.Invoke(_vidaActual);
     StaminaChangeEvent.Invoke(_staminaActual);
+
+    _firstPersonController = GetComponent<FirstPersonController>();
   }
 
   /// <summary>
@@ -132,22 +136,20 @@ public class ControladorJugador : MonoBehaviour
   private void ControlAnimacionMovimientos()
   {
     EstaCorriendo = Mathf.Abs(_controller.velocity.x) > 6.2 || Mathf.Abs(_controller.velocity.z) > 6.2;
-    print("Corriendo: " + EstaCorriendo);
-    
+
     if (_staminaActual <= 0)
     {
-      print("Frenando");
-      GetComponent<FirstPersonController>().m_RunSpeed = 5;
+      _firstPersonController.m_RunSpeed = 5;
     }
     else if (_staminaActual > 20)
     {
-      GetComponent<FirstPersonController>().m_RunSpeed = 10;
+      _firstPersonController.m_RunSpeed = 10;
     }
 
     if (EstaCorriendo && _staminaActual >= 0)
     {
       _staminaActual = _staminaActual <= 0 ? 0 : _staminaActual - Time.deltaTime * 10;
-      print("Stamina " + _staminaActual);
+
       StaminaChangeEvent.Invoke(_staminaActual);
     }
     else if (_staminaActual <= StaminaMaxima)
@@ -155,8 +157,7 @@ public class ControladorJugador : MonoBehaviour
       _staminaActual = _staminaActual > StaminaMaxima ? StaminaMaxima : _staminaActual + Time.deltaTime * 5;
       StaminaChangeEvent.Invoke(_staminaActual);
     }
-
-    print("Time.deltaTime: " + Time.deltaTime);
+    
     animadorArma.SetBool("corriendo", EstaCorriendo);
   }
 
@@ -199,6 +200,14 @@ public class ControladorJugador : MonoBehaviour
           case "roca":
             impacto = Instantiate(prefabsImpactos[3], hit.point, hit.transform.rotation);
             break;
+        }
+        
+        print("IMPACTO CON: " + hit.transform.gameObject.name);
+
+        var quitable = hit.transform.gameObject.GetComponent<IQuitableVida>();
+        if (quitable != null)
+        {
+          quitable.QuitaVida(10);
         }
 
         if (impacto != null)
