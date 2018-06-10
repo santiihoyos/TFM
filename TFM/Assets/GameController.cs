@@ -25,21 +25,19 @@ public class GameController : MonoBehaviour
   private int _sonidoDeFondoActual;
   private AudioMixer _audioMixer;
   private List<GameObject> _zombiesVivos = new List<GameObject>();
-  private int _zombiesVivosCount = 0;
+  private int _zombiesVivosCount;
 
   // Use this for initialization
 
   void Start()
   {
     _audioSourceGeneral = GetComponent<AudioSource>();
-
-    StartCoroutine(CambiaDeRonda());
   }
 
   // Update is called once per frame
   private void Update()
   {
-    if (!_audioSourceGeneral.isPlaying && SonidosDeFondo.Length > 0)
+    if (!_audioSourceGeneral.isPlaying && SonidosDeFondo.Length > 0 && RondaActual > 0)
     {
       if (_sonidoDeFondoActual + 1 >= SonidosDeFondo.Length)
       {
@@ -57,6 +55,7 @@ public class GameController : MonoBehaviour
 
   private IEnumerator CambiaDeRonda()
   {
+    Player.GetComponent<ControladorJugador>().Bloqueado = false;
     RondaActual++;
     if (OnRondaChange != null)
     {
@@ -96,5 +95,9 @@ public class GameController : MonoBehaviour
   private void OnTriggerEnter(Collider other)
   {
     print("Iniciando rondas!");
+    if (RondaActual <= 0 && other.gameObject.CompareTag("Player"))
+    {
+      StartCoroutine(CambiaDeRonda());
+    }
   }
 }

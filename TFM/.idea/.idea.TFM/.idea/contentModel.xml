@@ -9,19 +9,38 @@
         <e p="Barrels" t="Include">
           <e p="StandardDoubleSided.shader" t="Include" />
         </e>
-        <e p="Flare Gun" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="flarebullet.cs" t="Include" />
-            <e p="flaregun.cs" t="Include" />
-            <e p="flareround.cs" t="Include" />
-            <e p="swayc.cs" t="Include" />
-          </e>
-        </e>
+        <e p="CajaMunicionController.cs" t="Include" />
         <e p="GameController.cs" t="Include" />
         <e p="Helicopter" t="Include">
           <e p="Info.txt" t="Include" />
         </e>
         <e p="Libraries" t="Include">
+          <e p="Flare Gun" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="flarebullet.cs" t="Include" />
+              <e p="flaregun.cs" t="Include" />
+              <e p="flareround.cs" t="Include" />
+              <e p="swayc.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SkySerie Freebie" t="Include">
+            <e p="Hdri setup.txt" t="Include" />
+          </e>
+          <e p="Typewriter Custom Styles" t="Include">
+            <e p="Demo Scene" t="Include">
+              <e p="closedemo.cs" t="Include" />
+            </e>
+            <e p="Readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="TW_MultiStrings_All.cs" t="Include" />
+              <e p="TW_MultiStrings_RandomPointer.cs" t="Include" />
+              <e p="TW_MultiStrings_RandomText.cs" t="Include" />
+              <e p="TW_MultiStrings_Regular.cs" t="Include" />
+              <e p="TW_RandomPointer.cs" t="Include" />
+              <e p="TW_RandomText.cs" t="Include" />
+              <e p="TW_Regular.cs" t="Include" />
+            </e>
+          </e>
           <e p="_Standard Assets" t="Include">
             <e p="Characters" t="Include">
               <e p="FirstPersonCharacter" t="Include">
@@ -221,6 +240,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ControlZombie.cs" t="Include" />
           <e p="ControladorArma.cs" t="Include" />
           <e p="ControladorCasquillo.cs" t="Include" />
           <e p="ControladorJugador.cs" t="Include" />
@@ -228,9 +248,7 @@
           <e p="custom-events.cs" t="Include" />
           <e p="interfaces" t="Include">
             <e p="IQuitableVida.cs" t="Include" />
-          </e>
-          <e p="prototipado" t="Include">
-            <e p="ControlZombie.cs" t="Include" />
+            <e p="IRecogible.cs" t="Include" />
           </e>
           <e p="scriptables" t="Include">
             <e p="Arma" t="Include">
@@ -245,9 +263,6 @@
               <e p="Ronda.cs" t="Include" />
             </e>
           </e>
-        </e>
-        <e p="SkySerie Freebie" t="Include">
-          <e p="Hdri setup.txt" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

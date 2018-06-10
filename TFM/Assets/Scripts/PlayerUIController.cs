@@ -12,6 +12,7 @@ public class PlayerUIController : MonoBehaviour
   [SerializeField] private GameObject _panelJuego;
   [SerializeField] private GameObject _panelRonda;
   [SerializeField] private GameObject _panelVidaBaja;
+  [SerializeField] private GameObject _panelCinamtica;
   [SerializeField] private Text _contadorVida;
   [SerializeField] private Text _rondaText1;
   [SerializeField] private Text _rondaText2;
@@ -66,6 +67,7 @@ public class PlayerUIController : MonoBehaviour
 
   IEnumerator CambioDeRonda(int rondaActual)
   {
+    _panelCinamtica.SetActive(false);
     _rondaText1.text = Strings.Resolver.GetString("ronda") + " "+ rondaActual;
     _rondaText2.text = Strings.Resolver.GetString("ronda") + " "+ rondaActual;
     _panelRonda.SetActive(true);
@@ -85,5 +87,10 @@ public class PlayerUIController : MonoBehaviour
   public void OnStaminaChangeListener(float newStaminaPercent)
   {
     _contadorStamina.text = newStaminaPercent.ToString("000");
+  }
+
+  public void OnFinalDeEscrituraEnCinematica()
+  {
+    _panelCinamtica.SetActive(false);
   }
 }

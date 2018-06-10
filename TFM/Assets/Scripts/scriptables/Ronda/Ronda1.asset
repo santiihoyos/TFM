@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cccbe44257974de3af5a92390d07285, type: 3}
   m_Name: Ronda1
   m_EditorClassIdentifier: 
-  TotalZombies: 2
+  TotalZombies: 20
   DelaySpawmeoZombies: 1.5
   EsRondaFinal: 0

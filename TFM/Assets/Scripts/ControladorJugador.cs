@@ -16,6 +16,7 @@ public class ControladorJugador : MonoBehaviour
   public int[] BalasDeArmasPoseidas;
   public byte ArmaSeleccionada;
   public bool EstaCorriendo;
+  public bool Bloqueado;
   public int CargadorActual;
   public float VidaMaxima;
   public float StaminaMaxima;
@@ -82,6 +83,9 @@ public class ControladorJugador : MonoBehaviour
 
   private void Update()
   {
+    if (Bloqueado)
+      return;
+    
     if (_cuentaCadencia >= 0)
     {
       _cuentaCadencia -= Time.deltaTime;
@@ -101,6 +105,9 @@ public class ControladorJugador : MonoBehaviour
 
   private void Recarga()
   {
+    if (Bloqueado)
+      return;
+
     var animacionActual = animadorArma.GetCurrentAnimatorClipInfo(0)[0].clip;
     if (animacionActual.name != "shot")
     {
@@ -157,12 +164,15 @@ public class ControladorJugador : MonoBehaviour
       _staminaActual = _staminaActual > StaminaMaxima ? StaminaMaxima : _staminaActual + Time.deltaTime * 5;
       StaminaChangeEvent.Invoke(_staminaActual);
     }
-    
+
     animadorArma.SetBool("corriendo", EstaCorriendo);
   }
 
   private void ControlDisparo()
   {
+    if (Bloqueado)
+      return;
+    
     var arma = Armas[ArmaSeleccionada];
     RaycastHit hit;
     Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
@@ -201,7 +211,7 @@ public class ControladorJugador : MonoBehaviour
             impacto = Instantiate(prefabsImpactos[3], hit.point, hit.transform.rotation);
             break;
         }
-        
+
         print("IMPACTO CON: " + hit.transform.gameObject.name);
 
         var quitable = hit.transform.gameObject.GetComponent<IQuitableVida>();
